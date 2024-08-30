@@ -6,21 +6,23 @@
 ---
 ## Pasatiempos
 
+**Estos son los pasatiempos y hobbies que me gusta hacer en mi tiempo libre:**
 1. Dibujar
 
 <img src="https://i.pinimg.com/736x/84/be/57/84be57009ef96906b4daac6d5da3ed50.jpg" alt="Dibujo" width="200" height="230">
 
 2. Jugar Videojuegos
 
-<img src="https://i.ytimg.com/vi/hQhnXJ5pOwE/maxresdefault.jpg" alt="Dibujo" width="300" height="200">
+<img src="https://i.ytimg.com/vi/hQhnXJ5pOwE/maxresdefault.jpg" alt="l4d2" width="300" height="200">
 
 3. Moda
 
-<img src="https://i.pinimg.com/736x/b8/6c/bf/b86cbfeb36c9a09d67d2aa17b6aafeae.jpg" alt="Dibujo" width="200" height="250">
+<img src="https://i.pinimg.com/736x/b8/6c/bf/b86cbfeb36c9a09d67d2aa17b6aafeae.jpg" alt="Ropa" width="200" height="250">
 
 4. Maquillar
 
-<img src="https://img.freepik.com/premium-photo/collection-various-cosmetics-makeup-products-neatly-arranged-table-top-view-makeup-cosmetics-set-ai-generated_585735-8076.jpg" alt="Dibujo" width="300" height="250">
+<img src="https://img.freepik.com/premium-photo/collection-various-cosmetics-makeup-products-neatly-arranged-table-top-view-makeup-cosmetics-set-ai-generated_585735-8076.jpg" alt="Maquillaje" width="300" height="250">
+
 
 ---
 ## 🎶 Música Favorita 🎶
@@ -33,8 +35,14 @@
  + [Santa Madero](https://open.spotify.com/artist/0CRFTlHrIHedPTQFqUYAXN?si=bPsNGBrpRCq6xQEBjKePWQ)
  + [Tyler, The Creator](https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF?si=lHH9yDheRDuoC2YqTv5SSg)
 
+**Y este es mi TOP 3 de canciones favoritas del momento:**
+
++ [Enjambre - Enemigo ](https://open.spotify.com/track/5TfPnG96tAhiYodEF47T59?si=6211f50eb65e4e77)
++ [Charli xcx - Guess featuring Billie Eilish ](https://open.spotify.com/track/3WOhcATHxK2SLNeP5W3v1v?si=e580454df0b84efe)
++ [Billie Eilish - L’AMOUR DE MA VIE ](https://open.spotify.com/track/6fPan2saHdFaIHuTSatORv?si=5bfcb7d612844246)
 ---
 ## Horario 
+**Este es mi horario escolar el cual tiene muchas clases:**
 
 | **Hora** | **Lunes** | **Martes** | **Miercoles** | **Jueves** | **Viernes** |
 |:--------:|:---------:|:----------:|:------------:|:---------:|:---------:|
