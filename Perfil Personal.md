@@ -5,7 +5,7 @@
 ### **Carrera:** ***Ing. en Sistemas Computacionales***  
 ---
 ## Pasatiempos
----
+
 1. Dibujar
 
 <img src="https://i.pinimg.com/736x/84/be/57/84be57009ef96906b4daac6d5da3ed50.jpg" alt="Dibujo" width="200" height="230">
@@ -23,8 +23,19 @@
 <img src="https://img.freepik.com/premium-photo/collection-various-cosmetics-makeup-products-neatly-arranged-table-top-view-makeup-cosmetics-set-ai-generated_585735-8076.jpg" alt="Dibujo" width="300" height="250">
 
 ---
-## Horario 
+## 🎶 Música Favorita 🎶
+
+ **Estas son mis bandas y artistas favoritos:**
+
+ + [Enjambre](https://open.spotify.com/artist/1ZdhAl62G6ZlEKqIwUAfZR?si=2WzTJ2jDSUmAaNE90xgffw)
+ + [Belanova](https://open.spotify.com/artist/3oNy8cjBtJzLC07I70sklp?si=jI04w3svSj2f4_EsfCrGcQ)
+ + [Billie Eilish](https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH?si=fSiOMHMuR5mtK8vyvRazVg) 
+ + [Santa Madero](https://open.spotify.com/artist/0CRFTlHrIHedPTQFqUYAXN?si=bPsNGBrpRCq6xQEBjKePWQ)
+ + [Tyler, The Creator](https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF?si=lHH9yDheRDuoC2YqTv5SSg)
+
 ---
+## Horario 
+
 | **Hora** | **Lunes** | **Martes** | **Miercoles** | **Jueves** | **Viernes** |
 |:--------:|:---------:|:----------:|:------------:|:---------:|:---------:|
 | 7:00 - 8:00 | Programacion web <br>**A1S6**</br> *Gerardo Pineda Zapata* | Programacion web <br>**A1S6**</br> *Gerardo Pineda Zapata*  |Programacion web <br>**A1S6**</br> *Gerardo Pineda Zapata*  |Programacion web <br>**A1S6**</br> *Gerardo Pineda Zapata*  |Programacion web <br>**A1S6**</br> *Gerardo Pineda Zapata*  |
@@ -37,3 +48,5 @@
 | 14:00 - 15:00 | Graficacion <br>**A1S7**</br> *Miguel Ángel Guerrero Crespo* | Graficacion <br>**A1S7**</br> *Miguel Ángel Guerrero Crespo* |Graficacion <br>**A1S7**</br> *Miguel Ángel Guerrero Crespo* |Graficacion <br>**A1S7**</br> *Miguel Ángel Guerrero Crespo* |Graficacion <br>**A1S7**</br> *Miguel Ángel Guerrero Crespo* |
 
 ---
+
+
