@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22100182</title>
+
+
+    <style>
+       .caja {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(238, 86, 187);
+        border: 4px solid rgb(0, 0, 0);
+        color: black;
+        font-size: larger;
+        font-weight: bold;
+          }
+
+    #Static {
+        position:static;
+        background-image: url('https://i.pinimg.com/736x/7b/17/ba/7b17baaa6bf945a3d7c59acee9a30daf.jpg') ;
+        background-position: center;
+        background-size: cover;
+        }
+
+    #Relative  {
+        position:relative;
+        top: 100px;
+        left: 260px;
+
+        background-image: url('https://i.pinimg.com/736x/e4/87/ee/e487eea175cbf40eaa3ae6afb546b2e8.jpg') ;
+        background-position: center;
+        background-size: cover;
+           }
+
+
+    #Fixed  {
+        position:fixed;
+        top: 10px;
+        left: 250px;
+        background-image: url('https://i.pinimg.com/236x/6c/9f/ec/6c9fecf41fce7489cc8528342fa593d8.jpg') ;
+        background-position: center;
+        background-size: cover;
+           }
+
+    #Absolute {
+        position:absolute;
+        top: 170px;
+        left: 500px;
+        background-image: url('https://i.pinimg.com/236x/1d/74/5e/1d745eb017043409e3eb2acbbdf9477d.jpg') ;
+        background-position: center;
+        background-size: cover;
+           } 
+
+    #Sticky  {
+        position:sticky;
+        top: 100px;
+        background-image: url('https://i.pinimg.com/236x/2a/d2/bb/2ad2bb7721bb5f276fb2e716acd17ed5.jpg') ;
+        background-position: center;
+        background-size: cover;
+           }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="caja" id="Static">Static</div>
+
+    <div class="caja" id="Relative">Relative</div>
+
+    <div class="caja" id="Absolute">Absolute</div>
+
+    <div class="caja" id="Fixed">Fixed</div>
+
+    <div class="caja" id="Sticky">Sticky</div>
+
+    <div class="caja" id="caja1">Caja normal 1</div>
+    <div class="caja" id="caja2">Caja normal 2</div>
+    <div class="caja" id="caja3">Caja normal 3</div>
+    <div class="caja" id="caja4">Caja normal 4</div>
+  
+    
+</body>
+</html>
