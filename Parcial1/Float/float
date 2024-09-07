@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+.caja{
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: darkcyan;
+   
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    }
+.contenedor{
+    background-color: rgb(192, 221, 227);
+    overflow: auto;
+    font-weight: bold;
+}
+
+#caja1{
+    float: right;
+    clear: right;
+    background-image: url('https://i.pinimg.com/736x/fe/31/34/fe313470dba6692bf33413b12fe4c5b3.jpg') ;
+    background-position: center;
+    background-size: cover;
+}
+#caja2{
+    float: left;
+    clear: left;
+    background-image: url('https://i.pinimg.com/564x/dd/5b/25/dd5b25f8843d7c4d397d93176274099a.jpg') ;
+    background-position: center;
+    background-size: cover;
+}
+#caja3{
+    float: inline-end;
+    clear: both;
+    background-image: url('https://i.pinimg.com/564x/7f/30/21/7f3021303144b197567d6844e39893c9.jpg') ;
+    background-position: center;
+    background-size: cover;
+}
+#caja4{
+    float: inline-start;
+    clear: both;
+    background-image: url('https://i.pinimg.com/736x/60/b0/75/60b075101dfe882efd690270832bbc58.jpg') ;
+    background-position: center;
+    background-size: cover;
+}
+
+    </style>
+</head>
+<body>
+
+
+    <div class="caja" id="caja1">Contenido 1</div>
+    <div class="caja" id="caja2">Contenido 2</div>
+    <div class="contenedor">
+        <p>gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito 
+            gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito 
+            gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito 
+            gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito 
+            gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito 
+            gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito
+
+        </p>
+        <p>gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito 
+            gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito 
+            gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito 
+            gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito 
+            gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito 
+            gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito
+
+        </p>
+      
+    </div>
+
+
+
+
+<div class="caja" id="caja3">Contenido 3</div>
+
+<div class="caja" id="caja4">Contenido 4</div>
+    
+</body>
+</html>
