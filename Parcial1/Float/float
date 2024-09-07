@@ -59,6 +59,9 @@
 
     <div class="caja" id="caja1">Contenido 1</div>
     <div class="caja" id="caja2">Contenido 2</div>
+    <div class="caja" id="caja3">Contenido 3</div>
+
+<div class="caja" id="caja4">Contenido 4</div>
     <div class="contenedor">
         <p>gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito 
             gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito 
@@ -68,23 +71,14 @@
             gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito
 
         </p>
-        <p>gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito 
-            gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito 
-            gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito 
-            gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito 
-            gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito 
-            gatito gatito gatito gatito gatito gatito gatito gatito gatito gatito
-
-        </p>
+     
       
     </div>
 
 
 
 
-<div class="caja" id="caja3">Contenido 3</div>
 
-<div class="caja" id="caja4">Contenido 4</div>
     
 </body>
 </html>
