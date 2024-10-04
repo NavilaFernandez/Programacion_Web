@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .table-container {
+         display: flex;            
+        justify-content: center;  
+        align-items: center;       
+        height: 100vh;            
+        }
+
+        table {
+            border: 0.5vh solid black;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        table, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        tbody tr:nth-child(1) {
+            background-color: #00F5D4;
+        }
+        tbody tr:nth-child(2) {
+            background-color: #00D8E7;
+        }
+        tbody tr:nth-child(3) {
+            background-color: #7FD09D;
+        }
+        tbody tr:nth-child(4) {
+            background-color: #FEE440;
+        }
+        tbody tr:nth-child(5) {
+            background-color: #F8A07B;
+        }
+        tbody tr:nth-child(6) {
+            background-color: #F15BB5;
+        }
+        tbody tr:nth-child(7) {
+            background-color: #C65CCD;
+        }
+        tbody tr:nth-child(8) {
+            background-color: #9B5DE5;
+        }
+
+
+        tbody>tr:hover {
+            background-color:#BFDA6F;
+            color: white;
+        }
+
+        @media screen and (max-width: 500px) {
+            
+            
+
+
+            table {
+                height: 100%; 
+                
+                margin: 0 auto; 
+                border: none;
+            }
+
+            table, tr, td {
+                display: block;
+                position: relative;
+                text-align: center; 
+                border:none;
+              
+            }
+
+            thead {
+                display: none;
+            }
+
+            td {
+                border: none;
+                padding-left: 0; 
+                position: relative;
+                margin-bottom: 10px; 
+                
+            }
+
+           
+            td.lunes::before {
+                content: "Lunes: ";
+                font-weight: bold;
+                position: absolute;
+                left: 0;
+                top: 0;
+                
+            }
+
+            td.martes::before {
+                content: "Martes: ";
+                font-weight: bold;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            td.miercoles::before {
+                content: "Miércoles: ";
+                font-weight: bold;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            td.jueves::before {
+                content: "Jueves: ";
+                font-weight: bold;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            td.viernes::before {
+                content: "Viernes: ";
+                font-weight: bold;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <td>Materia</td>
+                <td>Lunes</td>
+                <td>Martes</td>
+                <td>Miércoles</td>
+                <td>Jueves</td>
+                <td>Viernes</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Web</td>
+                <td class="lunes">7:00 - 8:00</td>
+                <td class="martes">7:00 - 8:00</td>
+                <td class="miercoles">7:00 - 8:00</td>
+                <td class="jueves">7:00 - 8:00</td>
+                <td class="viernes">7:00 - 8:00</td>
+            </tr>
+            <tr>
+                <td>Taller de base de datos</td>
+                <td class="lunes">8:00 - 10:00</td>
+                <td></td>
+                <td></td>
+                <td class="jueves">8:00 - 10:00</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Sistemas operativos</td>
+                <td></td>
+                <td></td>
+                <td class="miercoles">8:00 - 10:00</td>
+                <td></td>
+                <td class="viernes">8:00 - 10:00</td>
+            </tr>
+            <tr>
+                <td>Tutorías</td>
+                <td></td>
+                <td></td>
+                <td class="miercoles">10:00 - 11:00</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Arquitectura de computadora</td>
+                <td class="lunes">11:00 - 1:00</td>
+                <td></td>
+                <td class="miercoles">12:00 - 1:00</td>
+                <td></td>
+                <td class="viernes">11:00 - 1:00</td>
+            </tr>
+            <tr>
+                <td>Fundamentos de Telecomunicaciones</td>
+                <td></td>
+                <td class="martes">11:00 - 1:00</td>
+                <td class="miercoles">11:00 - 12:00</td>
+                <td class="jueves">1:00 - 12:00</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ingeniería de software</td>
+                <td class="lunes">1:00 - 2:00</td>
+                <td class="martes">1:00 - 2:00</td>
+                <td class="miercoles">1:00 - 2:00</td>
+                <td class="jueves">1:00 - 2:00</td>
+                <td class="viernes">1:00 - 2:00</td>
+            </tr>
+            <tr>
+                <td>Graficación</td>
+                <td class="lunes">2:00 - 3:00</td>
+                <td class="martes">2:00 - 3:00</td>
+                <td class="miercoles">2:00 - 3:00</td>
+                <td class="jueves">2:00 - 3:00</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
