@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+</head>
+
+<style>
+.Sin{
+    color: #E5446D;
+    font-weight: bold;
+    
+}
+
+.con{
+    color: #FF8966;
+    font-weight: bolder;
+}
+
+</style>
+<body>
+
+    <div class="Sin">
+
+        <h1>Sin clases de Pure</h1>
+        <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
+
+     
+            <label for="nom" > Nombre</label>
+            <input type="text" name="nombre" id="nom">
+        
+            <label for="apep" > ApellidoP</label>
+            <input type="text" name="apellidoP" id="apeP">
+        
+            <label for="apeM" > ApellidoM</label>
+            <input type="text" name="apellidoM" id="apeM">
+        
+            <input type="submit" value="Enviar">
+            <input type="button" value="Subir">
+            <input type="reset" value="Reset">
+        </form>
+        
+    </div>
+    
+&nbsp; 
+
+<div class="con">
+    <h1>Con clases de Pure</h1>
+    <form class="pure-form pure-form-stacked"></form>
+    <fieldset>
+        <legend>Formulario</legend>
+        <label for="stacked-email">Email</label>
+        <input type="email" id="stacked-email" placeholder="Email" />
+        <span class="pure-form-message">Este campo es obligatorio</span>
+        <label for="stacked-password">Contraseña</label>
+        <input type="password" id="stacked-password" placeholder="Contraseña" />
+        <label for="stacked-state">Estado</label>
+        <select id="stacked-state">
+            <option>TAM</option>
+            <option>CDMX</option>
+            <option>CAN</option>
+        </select>
+        <label for="stacked-remember" class="pure-checkbox">
+            <input type="checkbox" id="stacked-remember" /> Recuerdame
+        </label>
+        <button type="submit" class="pure-button pure-button-primary">Iniciar sesion</button>
+    </fieldset>
+    </form>
+</div>
+
+
+</body>
+</html>
