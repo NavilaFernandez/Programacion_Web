@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click</button>
+    <div id="res"></div>
+
+
+    <script>
+        // document.getElementById('btn').addEventListener('click',()=>(
+        //     fetch('https://api.thecatapi.com/v1/images/search')
+        //     .then(resultado => resultado.json())
+        //     .then( dato => {const imagenUrl = dato[0].url;
+        //     document.getElementById('res').innerHTML = `<img src="${imagenUrl}" alt="Gato" width = "300">`;
+        // })),
+
+        document.getElementById('btn').addEventListener('click', async function Peticion() {
+    try {
+        const respuesta = await fetch('https://api.thecatapi.com/v1/images/search');
+        const json = await respuesta.json();
+        const imagenUrl = json[0].url; 
+        document.getElementById('res').innerHTML = `<img src="${imagenUrl}" alt="Gato">`;
+    } catch (err) {
+        console.log(err.message);
+    }
+        })
+    </script>
+    <!-- //    <script>
+    //     document.getElementById('btn').addEventListener('click',()=>(
+    //         fetch('https://api.thecatapi.com/v1/images/search')
+    //         .then(resultado => resultado.json())
+    //         .then( dato => document.getElementById('res').innerText=dato.value)
+    //     ))
+
+
+    // </script>  -->
+</body>
+</html>
