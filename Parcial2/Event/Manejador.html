@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          color: rgb(188, 97, 112);
+        }
+
+        #miboton{
+            display: block;
+            background-color: pink;
+            color: rgb(146, 63, 77);
+            width: 200px;
+            font-weight: bolder;
+            margin: 10px;
+            border-color: rgb(229, 106, 161);
+            border-radius: 20px;
+        }
+        #DOM{
+            display: block;
+            background-color: rgb(199, 180, 239);
+            color: rgb(33, 36, 43);
+            width: 200px;
+            font-weight: bolder;
+            margin: 10px;
+            border-color: rgb(119, 2, 68);
+            border-radius: 20px;
+        }
+
+        .boton{
+            display: block;
+            background-color: rgb(252, 203, 98);
+            color: rgb(27, 29, 117);
+            width: 200px;
+            font-weight: bolder;
+            margin: 10px;
+            border-color: rgb(255, 159, 86);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Registrar manejadores de eventos en Javascript</h1>
+    
+    <button id="miboton" onclick="alert('Hola Mundo')"> Usando los atributos de evento en el HTML</button>
+
+
+
+
+
+
+    <button id="DOM">Usando las propiedades del elemento en el DOM</button>
+    <script>
+        let elemento = document.getElementById("DOM");
+        elemento.onclick = function(){alert("Holaaa")}
+
+        document.getElementById("DOM").onclick = function(){alert("Halloween")}
+    </script>
+
+
+
+
+
+
+
+    <button id="listener" class="boton"> Usando addEventListener()</button>
+
+    <script>
+        document.querySelector('#listener').addEventListener("click",miFuncion1);
+        document.querySelector('#listener').addEventListener("click",miFuncion2);
+
+        function miFuncion2() {alert('Funcion 2')}
+        function miFuncion1(evento) {alert('Funcion 1')}
+    </script>
+
+
+
+
+
+
+
+    <button id="listener2" class="boton"> Usando addEventListener()</button>
+
+    <script>
+        document.querySelector('#listener2').addEventListener("click",
+        function()
+        {
+            alert('funcion');
+
+        });
+    </script>
+
+
+
+
+
+
+    <button id="listener3" class="boton"> Usando addEventListener()</button>
+
+    <script>
+        document.querySelector('#listener3').addEventListener("click",
+        ()=>{
+            alert('Funcion');
+
+        });
+    </script>
+
+</body>
+</html>
