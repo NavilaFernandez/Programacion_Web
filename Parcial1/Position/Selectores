@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+<style>
+div p {color:red}
+div > p{color:red}
+div + p{color:red}
+div ~ p{color:red}
+
+
+</style>
+
+
+</head>
+<body>
+
+
+    <div>
+        <p>Parrafo 1</p>
+        <div>
+            <p>Parrafo 2</p>
+        </div>
+        <p> Parrafo 3</p>
+    </div>
+    <p>Parrafo 4</p>
+    <p>Parrafo 5</p>
+    
+</body>
+</html>

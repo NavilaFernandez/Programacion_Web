@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+*{
+    color: rgb(23, 112, 189);
+
+}
+h1{
+    color: brown !important;
+
+}
+
+div{
+    color: blue;
+}
+
+.contenedor{
+    color: rgb(235, 24, 182) ;
+    font-size: larger;
+    
+
+}
+p{
+    color: chartreuse;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatibus sunt soluta voluptates mollitia perferendis esse earum voluptatem id facere ullam quasi recusandae eum veritatis obcaecati, voluptas eveniet? Nesciunt, aliquid?</h1>
+
+    <div class="contenedor">
+        ffffffff
+        <p class="contenedor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ad rerum et facere cumque dolore, provident nihil ipsam libero perspiciatis illo aliquam quidem architecto! Ullam suscipit tempora vitae aliquam fugit.</p>
+    </div>
+    
+</body>
+</html>
