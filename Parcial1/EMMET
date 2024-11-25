@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    
+    <style>
+         th, td {
+      text-align: center; 
+      border: 1px solid black;
+      
+      padding: 8px;
+    }
+    </style>
+
+<h2>Emmet en HTML</h2> 
+
+
+<table border="1">
+    <thead>
+      <tr>
+        <th>Acción</th>
+        <th>Simbología</th>       
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Anidar Etiquetas</td>
+        <td>></td>       
+      </tr>
+      <tr>
+        <td>Crear Etiquetas hermanos </td>
+        <td>+</td>       
+      </tr>
+      <tr>
+        <td>Regresar un nivel </td>
+        <td>^</td>      
+      </tr>
+      <tr>
+        <td>Agregar ID a la Etiqueta </td>
+        <td>#</td>      
+      </tr>
+      <tr>
+        <td>Agregar una clase a la Etiqueta </td>
+        <td>.</td>      
+      </tr>
+      <tr>
+        <td>Multiplicar Etiqueta </td>
+        <td>*</td>      
+      </tr>
+      <tr>
+        <td>Enumerar Etiqueta </td>
+        <td>$</td>      
+      </tr>
+      <tr>
+        <td>Agrupacion de Etiquetas </td>
+        <td>()</td>      
+      </tr>
+      <tr>
+        <td>Agregar texto al elemento </td>
+        <td>{}</td>      
+      </tr>
+      <tr>
+        <td>Agregar atributo </td>
+        <td>[nombre=valor]</td>      
+      </tr>
+      <tr>
+        <td>Agregar Texto de relleno </td>
+        <td>lorem</td>      
+      </tr>   
+    </tbody>
+  </table>
+
+
+<!--Ejemplos-->
+
+
+<div>
+  <ul>
+    <li></li>
+  </ul>
+</div>
+
+
+<h1></h1>
+<p></p>
+
+
+
+<div>
+  <ul>
+    <li></li>
+  </ul>
+  <h1></h1>
+</div>
+
+
+<div id="conte"></div>
+
+<div class="estilo"></div>
+
+
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+
+
+<ul>
+  <li>Elemento1</li>
+  <li>Elemento2</li>
+  <li>Elemento3</li>
+</ul>
+
+<ul>
+  <li>Ele001</li>
+  <li>Ele002</li>
+  <li>Ele003</li>
+</ul>
+
+<div></div>
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+
+<h1>hola mundo</h1>
+
+<h1 style="color:blue">aaaa</h1>
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vel officiis vitae possimus cupiditate molestiae, nulla magnam maiores reiciendis voluptate culpa esse ea unde, mollitia nostrum incidunt ex consectetur repudiandae?
+
+
+</body>
+</html>
+

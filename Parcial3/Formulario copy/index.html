@@ -6,17 +6,17 @@
     <title>Subir Imagen y Ver PDF</title>
 </head>
 <body>
-    <h1>Formulario de Subida</h1>
+    <h1>Formulario para crear un PDF</h1>
     <form id="uploadForm" action="http://localhost:7000/Formulario/" method="POST" enctype="multipart/form-data" target="_blank">
-        <label for="nombre">Nombre:</label>
+        <label for="nombre">Nombre del archivo:</label>
         <input type="text" id="nombre" name="nombre" required>
         <br><br>
 
-        <label for="archivo">Seleccionar Imagen:</label>
+        <label for="archivo">Seleccione la Imagen:</label>
         <input type="file" id="archivo" name="archivo" accept="image/*" required>
         <br><br>
 
-        <button type="submit">ver pdf</button>
+        <button type="submit">ver el PDF</button>
     </form>
 
     <script>

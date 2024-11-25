@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navila</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nerko+One&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+
+        .nerko-one-regular {
+             font-family: "Nerko One", cursive;
+             font-weight: 400;
+            font-style: normal;
+              }
+
+        .manrope {
+                 font-family: "Manrope", sans-serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+                }
+        body {
+            background-image: url(https://i.pinimg.com/736x/41/d5/ad/41d5adf552a9d332885bda0560d9fa20.jpg); 
+            font-family: Arial, sans-serif; 
+            color: #000000; 
+            margin: 20px;
+
+            
+        }
+        h1 {
+            text-align: center;
+            font-family: "Nerko One", cursive;  
+            font-weight: bolder;
+            font-size: 50px;
+            color: #9f0d0d;
+
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 60px;
+            
+            
+            border: 1px solid #ffcccc;
+            border-radius: 10px;
+            background-color: #fff5f5; 
+        }
+        label {
+            font-family: "Nerko One", cursive;  
+            font-weight: bolder;
+            font-size: 25px;
+            color: #9f0d0d;
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+
+            font-family: "Nerko One", cursive;  
+            font-weight: bolder;
+            font-size: 25px;
+            color:#5b0808;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ffcccc;
+            border-radius: 20px;
+        }
+
+        #archivo {
+        display: none;
+         }
+
+        .custom-label {
+            font-family: "Nerko One", cursive;  
+            font-weight: bolder;
+            font-size: 25px;
+            color: #9f0d0d;
+            width: 100%; 
+            padding: 8px;
+            margin-bottom: 16px;
+            text-align: center;
+            
+            background-color: #ffcccc;
+            border: 1px solid #ffcccc;
+            border-radius: 20px;
+            cursor: pointer;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .custom-label:hover {
+            background-color: #acc8db;
+            color: #5b0808;
+        }
+        
+        button {
+            font-family: "Manrope", sans-serif; 
+            font-weight: bolder;
+            font-size: 17px;
+            
+            background-color:#5b0808; 
+            background-size: cover;
+            color: #fedeef; 
+            border: 2px solid #ff9999;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            
+            
+        }
+        
+        button:hover {
+            background-color: #9f0d0d;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario con verificación</h1>
+    <form id="uploadForm" action="http://localhost:3000/Form/" method="POST" enctype="multipart/form-data" target="_blank">
+        <label for="nombre">Nombre del archivo:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="archivo" class="custom-label">Seleccionar Imagen </label>
+        <input type="file" id="archivo" name="archivo" accept="image/*">
+
+       
+        <button type="submit">Ver PDF</button>
+    </form>
+
+    <script>
+
+        document.getElementById('uploadForm').onsubmit = async function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(document.getElementById('uploadForm'));
+            
+            try {
+                const response = await fetch('http://localhost:3000/Form/', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const pdfBlob = await response.blob();
+                const pdfUrl = URL.createObjectURL(pdfBlob);
+                window.open(pdfUrl, '_blank'); 
+
+            } catch (error) {
+                console.error('Error al subir la imagen:', error);
+            }
+        };
+    </script>
+</body>
+</html>

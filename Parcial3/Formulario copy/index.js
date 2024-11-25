@@ -7,12 +7,16 @@ const { jsPDF } = require("jspdf");
 const app = express();
 const port = 7000;
 
+
 app.use(cors());
+
 
 const folder = path.join(__dirname, 'archivos');
 const pdfFolder = path.join(__dirname, 'archivosgen');
 if (!fs.existsSync(folder)) fs.mkdirSync(folder);
 if (!fs.existsSync(pdfFolder)) fs.mkdirSync(pdfFolder);
+
+
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => cb(null, folder),
@@ -34,10 +38,10 @@ app.post('/Formulario/', upload.single('archivo'), async (req, res) => {
     try {
         const doc = new jsPDF();
         
-        doc.text("Imagen subida con éxito", 10, 10);
+        doc.text("Se subio la imagen", 10, 10);
         
         const imageData = fs.readFileSync(imagePath).toString('base64');
-        doc.addImage(`data:image/jpeg;base64,${imageData}`, "JPEG", 10, 20, 180, 160); // Ajusta el tamaño y posición según tus necesidades
+        doc.addImage(`data:image/jpeg;base64,${imageData}`, "JPEG", 10, 20, 180, 160); 
 
         doc.save(pdfPath);
 
@@ -49,6 +53,7 @@ app.post('/Formulario/', upload.single('archivo'), async (req, res) => {
         res.status(500).send("Error al generar el PDF");
     }
 });
+
 
 app.use('/archivos', express.static(folder));
 app.use('/archivosgen', express.static(pdfFolder));

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navila</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nerko+One&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+
+        .nerko-one-regular {
+             font-family: "Nerko One", cursive;
+             font-weight: 400;
+            font-style: normal;
+              }
+
+        .manrope {
+                 font-family: "Manrope", sans-serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+                }
+        body {
+            background-image: url(https://i.pinimg.com/736x/31/e3/a7/31e3a7666a673ff76861714a4c9206e5.jpg); 
+            background-attachment: fixed; 
+            font-family: Arial, sans-serif; 
+            color: #000000; 
+            
+        }
+        h1 {
+            text-align: center;
+            font-family: "Nerko One", cursive;  
+            font-weight: bolder;
+            font-size: 120px;
+            color: #eee5e5;
+            -webkit-text-stroke: 0.1px #262e4b;
+
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 60px;
+            
+            border: 3px solid #610909;
+            border-radius: 10px;
+            background-color: #c4c7db; 
+        }
+        label {
+            font-family: "Nerko One", cursive;  
+            font-weight: bolder;
+            font-size: 25px;
+            color: #9f0d0d;
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+
+            font-family: "Nerko One", cursive;  
+            font-weight: bolder;
+            font-size: 25px;
+            color:#5b0808;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid#9f0d0d;
+            border-radius: 20px;
+        }
+
+        input[type="number"] {
+
+            font-family: "Nerko One", cursive;  
+            font-weight: bolder;
+            font-size: 25px;
+            color:#5b0808;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid#9f0d0d;
+            border-radius: 20px;
+            }
+
+        #archivo {
+        display: none;
+         }
+
+        .custom-label {
+            font-family: "Nerko One", cursive;  
+            font-weight: bolder;
+            font-size: 25px;
+            color: #eee5e5;
+            width: 100%; 
+            padding: 8px;
+            margin-bottom: 16px;
+            text-align: center;
+            
+            background-color: #423d56;
+            border: 1px solid #423d56;
+            border-radius: 20px;
+            cursor: pointer;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .custom-label:hover {
+            background-color: #d8d6e2;
+            color: #5b0808;
+        }
+        
+        button {
+            font-family: "Manrope", sans-serif; 
+            font-weight: bolder;
+            font-size: 17px;
+            
+            background-color:#5b0808; 
+            background-size: cover;
+            color: #eee5e5;
+            border: 2px solid#510808;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            
+            
+        }
+        
+        button:hover {
+            background-color: #9f0d0d;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Pedidos</h1>
+    <form id="uploadForm" action="http://localhost:3000/FormPasteleria/" method="POST" enctype="multipart/form-data" target="_blank">
+        <label for="nombre">id:</label>
+        <input type="text" id="id" name="id">
+
+        <label for="nombre">Tipo de Pastel:</label>
+        <input type="text" id="Tipo" name="nombre">
+
+        <label for="nombre">Cantidad:</label>
+        <input type="number" id="Cant" name="Cantidad">
+
+        <label for="nombre">Sabor:</label>
+        <input type="text" id="Sa" name="Sabor">
+
+        <label for="nombre">Descripcion:</label>
+        <input type="text" id="Des" name="Descripcion">
+
+        <label for="nombre">Precio:</label>
+        <input type="number" id="Pre" name="Precio">
+
+        <label for="archivo" class="custom-label">Seleccionar Imagen </label>
+        <input type="file" id="archivo" name="archivo" accept="image/*">
+
+        <button type="button" id="btnConsulta">Consultar Pedido</button>
+        <button type="submit">Ver PDF</button>
+    </form>
+
+    <script>
+
+document.getElementById('btnConsulta').addEventListener('click', async (event) => {
+    event.preventDefault(); // Evita el comportamiento predeterminado del botón
+
+    const id = document.getElementById('id').value.trim(); // Captura el ID ingresado
+    if (!id) {
+        alert("Por favor, ingresa un ID válido.");
+        return;
+    }
+
+    try {
+        const response = await fetch(`http://localhost:3000/pedido/${id}`);
+        if (!response.ok) {
+            if (response.status === 404) {
+                alert("Pedido no encontrado.");
+            } else {
+                alert("Error al consultar el pedido.");
+            }
+            return;
+        }
+
+        const pedido = await response.json();
+
+        // Asigna los valores a los inputs correspondientes
+        document.getElementById('Tipo').value = pedido.tipo || '';
+        document.getElementById('Cant').value = pedido.cantidad || '';
+        document.getElementById('Sa').value = pedido.sabor || '';
+        document.getElementById('Des').value = pedido.descripcion || '';
+        document.getElementById('Pre').value = pedido.Precio || '';
+    } catch (error) {
+        console.error('Error al consultar el pedido:', error);
+        alert("Error al realizar la consulta. Verifica tu conexión.");
+    }
+});
+
+
+        document.getElementById('uploadForm').onsubmit = async function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(document.getElementById('uploadForm'));
+            
+            try {
+                const response = await fetch('http://localhost:3000/FormPasteleria/', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const pdfBlob = await response.blob();
+                const pdfUrl = URL.createObjectURL(pdfBlob);
+                window.open(pdfUrl, '_blank'); 
+
+            } catch (error) {
+                console.error('Error al subir la imagen:', error);
+            }
+        };
+    </script>
+</body>
+</html>

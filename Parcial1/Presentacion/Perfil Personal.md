@@ -41,8 +41,49 @@
 + [Charli xcx - Guess featuring Billie Eilish ](https://open.spotify.com/track/3WOhcATHxK2SLNeP5W3v1v?si=e580454df0b84efe)
 + [Billie Eilish - L’AMOUR DE MA VIE ](https://open.spotify.com/track/6fPan2saHdFaIHuTSatORv?si=5bfcb7d612844246)
 ---
+## Lenguajes de programacion que domino
+
++ C#
++ HTML (no es un lenguaje pero conozco las bases)
++ C++
+
+
+---
+## Historial Academico
+**Estas son las materias que ya curse junto con la calificacion que obtuve:**
+| **#** | **Materia** | **Calificación** | 
+|:--------:|:---------:|:----------:|
+|ACF0901|CÁLCULO DIFERENCIAL|81|
+|ACD0908|DESARROLLO SUSTENTABLE|90|
+|SCD1008|FUNDAMENTOS DE PROGRAMACION|86|
+|AEF1041|MATEMATICAS DISCRETAS|100|
+|SCH1024|TALLER DE ADMINISTRACION|98|
+|ACA0907|TALLER DE ÉTICA|100|
+|ACF0903|ÁLGEBRA LINEAL|95|
+|ACF0902|CÁLCULO INTEGRAL|80|
+|ACC0906|FUNDAMENTOS DE INVESTIGACIÓN|87|
+|AEF1052|PROBABILIDAD Y ESTADISTICA|80|
+|SCD1020|PROGRAMACION ORIENTADA A OBJETOS|88|
+|AEC1058|QUIMICA|95|
+|ACF0904|CÁLCULO VECTORIAL|99|
+|AEC1008|CONTABILIDAD FINANCIERA|96|
+|SCC1005|CULTURA EMPRESARIAL|86|
+|ACF0905|ECUACIONES DIFERENCIALES|80|
+|AED1026|ESTRUCTURA DE DATOS|93|
+|SCF1006|FISICA GENERAL|86|
+|AEF1031|FUNDAMENTOS DE BASES DE DATOS|88|
+|SCC1007|FUNDAMENTOS DE INGENIERIA DE SOFTWARE|93|
+|SCC1013|INVESTIGACION DE OPERACIONES|98|
+|SCC1017|METODOS NUMERICOS|88|
+|SCD1018|PRINCIPIOS ELECTRICOS Y APLICACIONES DIGITALES|99|
+|SCD1022|SIMULACION|92|
+|ACA0909|TALLER DE INVESTIGACION I|100|
+|ACA0910|TALLER DE INVESTIGACION II|94|
+
+
+---
 ## Horario 
-**Este es mi horario escolar el cual tiene muchas clases:**
+**Actualmente estoy cursando 5to Semestre y estas son las clases que llevo:**
 
 | **Hora** | **Lunes** | **Martes** | **Miercoles** | **Jueves** | **Viernes** |
 |:--------:|:---------:|:----------:|:------------:|:---------:|:---------:|
