@@ -192,6 +192,11 @@ document.getElementById('btnConsulta').addEventListener('click', async (event) =
         document.getElementById('Sa').value = pedido.sabor || '';
         document.getElementById('Des').value = pedido.descripcion || '';
         document.getElementById('Pre').value = pedido.Precio || '';
+
+
+
+
+        
     } catch (error) {
         console.error('Error al consultar el pedido:', error);
         alert("Error al realizar la consulta. Verifica tu conexión.");
@@ -218,6 +223,12 @@ document.getElementById('btnConsulta').addEventListener('click', async (event) =
                 console.error('Error al subir la imagen:', error);
             }
         };
+
+
+
+       
+
+
     </script>
 </body>
 </html>
